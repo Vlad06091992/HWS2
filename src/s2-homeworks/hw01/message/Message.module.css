@@ -1,17 +1,26 @@
 .message {
-
+    order: 0;
+display: inline-block;
+    margin-left: auto;
+    /*text-align: end;*/
 }
 
-.imageAndText {
 
+.imageAndText {
+    display: flex;
+    margin-left: auto;
 }
 
 .imageAndText img {
-
+    order: 1;
+    max-width: 150px;
+    height: auto;
 }
 
 .text {
-
+    background: #0059b3;
+    border-radius: 20px;
+    color: white;
 }
 
 .text:after {
@@ -19,11 +28,13 @@
 }
 
 .name {
-
+   text-align: end;
+    position: relative;
+    right: 20px;
 }
 
 .messageText {
-
+margin: 10px
 }
 
 .time {
