@@ -1,25 +1,29 @@
 .friendMessage {
-    order: 0;
-    display: inline-block;
+    margin: 10px 0;
+    order: 1;
+    display: block;
     margin-left: auto;
     /*text-align: end;*/
+
 }
 
 .friendImageAndText {
     display: flex;
     margin-left: auto;
+
 }
 
 .friendImageAndText img {
-    order: 1;
-    max-width: 150px;
+    order: 0;
+    max-width: 135px;
     height: auto;
 }
 
 .friendText {
-    background: #0059b3;
+    background: honeydew;
     border-radius: 20px;
-    color: white;
+    color: black;
+    min-width: 500px
 }
 
 .friendText:after {
