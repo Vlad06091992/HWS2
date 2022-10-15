@@ -5,7 +5,7 @@ import s from './Affairs.module.css'
 
 type AffairsPropsType = {
     data: Array<AffairType> // need to fix any
-    setFilter:  React.Dispatch<React.SetStateAction<FilterType>>
+    setFilter:  (pr:FilterType)=>void
     deleteAffairCallback: (id:number)=>void
     filter: FilterType
 }
