@@ -31,6 +31,7 @@ function Affair(props: AffairPropsType) {
             </div>
             <div id={'hw2-priority-' + props.affair._id} hidden>
                 {/*создаёт студент*/}
+                <div>{props.affair.priority}</div>
 
                 {/**/}
             </div>
