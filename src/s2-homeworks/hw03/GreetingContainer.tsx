@@ -74,7 +74,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
             onEnter={onEnter}
             error={error}
             totalUsers={totalUsers}
-            // lastUserName={lastUserName}
+            lastUserName={lastUserName}
         />
     )
 }
