@@ -12,7 +12,7 @@ export const pureAddUser = (name: string, setError: (n:string)=>void, setName: (
     if(name.length == 0 || name === "    ") {
         setError("Ошибка! Введите имя!")
     } else {
-        (addUserCallback(name))
+        addUserCallback(name)
         alert(`Привет ${name}!`)
         setName('')
     }
@@ -50,7 +50,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
-        setTotalUsers(++totalUsers)
+
     }
 
     const onBlur = () => {
@@ -61,8 +61,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnEnter(e, addUser)
     }
 
-    let[totalUsers,setTotalUsers] = useState(0) // need to fix
-    const lastUserName = name // need to fix
+    let totalUsers = users.length  // need to fix
+    let lastUserName = users[users.length - 1]?.name // need to fix
 
     return (
         <Greeting
@@ -73,7 +73,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
             onEnter={onEnter}
             error={error}
             totalUsers={totalUsers}
-            lastUserName={lastUserName}
+            // lastUserName={lastUserName}
         />
     )
 }
