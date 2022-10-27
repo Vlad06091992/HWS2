@@ -1,6 +1,5 @@
 .button {
-    /*background: green;*/
-    /*color:green;*/
+    border: inherit;
 }
 
 .disabled {
