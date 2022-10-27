@@ -1,20 +1,27 @@
 .input:focus {
+    border: 3px solid black;
 }
 
 .input {
+    font-style: italic;
 }
 
 .inputWrapper {
+
 }
 
 .superInput {
 }
 
 .errorInput {
+border: 3px solid red;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    font-size: 8px;
+    color:red;
+    display:block;
 }
