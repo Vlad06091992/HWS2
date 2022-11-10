@@ -1,6 +1,10 @@
 .sidebar {
 }
 
+.active{
+
+}
+
 .sidebar.open {
 }
 
@@ -17,6 +21,7 @@
 }
 
 .nav a.active {
+    color:green;
 }
 .close {
 }

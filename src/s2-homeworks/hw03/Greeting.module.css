@@ -2,28 +2,57 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
 }
 
 .error {
+    color:red;
+    font-size: 10px;
 }
 
 .input {
+    height: 30px;
+    border: 1px solid #33333845;
+    border-radius: 3px;
 }
 
 .input:focus {
 }
 
 .errorInput {
-    border:3px solid red;
+    height: 30px;
+    border:1px solid red;
 }
 
 .button {
+    align-self: baseline;
+    margin-left: 15px;
+    border: inherit;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 24px;
+    border-radius: 3px;
+    background: #0066CC;
+    padding: 5px 24px;
+    border-radius: 3px;
+    color:white;
+}
+
+.button:hover{
+    filter:brightness(120%);
+    cursor: pointer;
 }
 
 .button:focus {
+    filter:brightness(120%);
+    cursor: pointer;
 }
 
 .button:active {
+    filter:brightness(90%);
 }
 
 .button:disabled {

@@ -1,25 +1,45 @@
 .button {
     border: inherit;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 24px;
+    border-radius: 3px;
+    color:white;
 }
 
 .disabled {
-    background: yellow;
-    color:yellow;
+background: #004D99;
+    opacity: 0.5;
+    color:#002E5C
 }
 
 .secondary {
-    background: gray;
-    color:gray;
+border:1px solid #0066CC;
+    color:#0066CC;
+    background: white;
+
 }
 
 .default {
-    background: blue;
-    color:blue;
+    background: #0066CC;
+    padding: 5px 24px;
+    border-radius: 3px;
+
 }
 
 .red {
-    background: red;
-    color:red;
+    background: #CC1439;
+    padding: 5px 24px;
+    border-radius: 3px;
+
+}
+
+.button:hover{
+    filter:brightness(120%);
+    cursor: pointer;
 }
 
 .default:hover {
@@ -31,14 +51,23 @@
 .secondary:hover {
 }
 
+.disabled:hover{
+    filter:brightness(100%);
+    cursor: none;
+}
+
+
 
 .default:active {
+    filter:brightness(90%);
 }
 
 .secondary:active {
+    filter:brightness(90%);
 }
 
 .red:active {
+    filter:brightness(90%);
 }
 
 .button:disabled {
