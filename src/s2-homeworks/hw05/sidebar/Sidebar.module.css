@@ -2,7 +2,11 @@
 }
 
 .active{
+    color:yellow;
+}
 
+.default{
+    color: black;
 }
 
 .sidebar.open {
@@ -21,7 +25,6 @@
 }
 
 .nav a.active {
-    color:green;
 }
 .close {
 }
