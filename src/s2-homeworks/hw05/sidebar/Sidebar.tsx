@@ -37,7 +37,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
 
-                        className={s.active} // делает студент
+                        className={navClass} // делает студент
                     >
                         Pre-junior
                     </NavLink>
