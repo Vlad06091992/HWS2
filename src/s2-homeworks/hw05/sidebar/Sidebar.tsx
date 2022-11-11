@@ -14,7 +14,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
         + (open ? ' ' + s.open : '')
 
     const navClass = (props:any)=>{
-        return "active"
+        return props.isActive ? s.active : s.default
     }
 
     return (
