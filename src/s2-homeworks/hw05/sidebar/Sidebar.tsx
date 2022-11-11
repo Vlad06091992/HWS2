@@ -14,7 +14,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
         + (open ? ' ' + s.open : '')
 
     const navClass = (props:any)=>{
-        return " "
+        return props.isActive ? s.active : s.default
     }
 
     return (
@@ -37,7 +37,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
 
-                        className={navClass} // делает студент
+                        className={s.default} // делает студент
                     >
                         Pre-junior
                     </NavLink>
