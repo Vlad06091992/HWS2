@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/HWS2/static/css/main.4f751bc0.css",
-    "main.js": "/HWS2/static/js/main.dc914c99.js",
-    "static/js/787.66cb4309.chunk.js": "/HWS2/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/HWS2/static/media/avatar.d947cb9d0d13765666b6.png",
-    "static/media/404.svg": "/HWS2/static/media/404.dae7af4892f2a3abe805a174178919f2.svg",
-    "static/media/closeOutline.svg": "/HWS2/static/media/closeOutline.91a6693133923612a0702421ab3e9923.svg",
-    "static/media/editIcon.svg": "/HWS2/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
-    "static/media/checked.svg": "/HWS2/static/media/checked.0b6a1bcf5d417ff0a947.svg",
-    "index.html": "/HWS2/index.html",
-    "static/media/burger.svg": "/HWS2/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
-    "main.4f751bc0.css.map": "/HWS2/static/css/main.4f751bc0.css.map",
-    "main.dc914c99.js.map": "/HWS2/static/js/main.dc914c99.js.map",
-    "787.66cb4309.chunk.js.map": "/HWS2/static/js/787.66cb4309.chunk.js.map"
+    "main.css": "/IgnatHW/static/css/main.f69ca426.css",
+    "main.js": "/IgnatHW/static/js/main.58d70be0.js",
+    "static/js/787.66cb4309.chunk.js": "/IgnatHW/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/IgnatHW/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/404.svg": "/IgnatHW/static/media/404.dae7af4892f2a3abe805a174178919f2.svg",
+    "static/media/closeOutline.svg": "/IgnatHW/static/media/closeOutline.91a6693133923612a0702421ab3e9923.svg",
+    "static/media/editIcon.svg": "/IgnatHW/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
+    "static/media/checked.svg": "/IgnatHW/static/media/checked.0b6a1bcf5d417ff0a947.svg",
+    "index.html": "/IgnatHW/index.html",
+    "static/media/burger.svg": "/IgnatHW/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
+    "main.f69ca426.css.map": "/IgnatHW/static/css/main.f69ca426.css.map",
+    "main.58d70be0.js.map": "/IgnatHW/static/js/main.58d70be0.js.map",
+    "787.66cb4309.chunk.js.map": "/IgnatHW/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f751bc0.css",
-    "static/js/main.dc914c99.js"
+    "static/css/main.f69ca426.css",
+    "static/js/main.58d70be0.js"
   ]
 }
