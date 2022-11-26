@@ -63,7 +63,6 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
                 {error}
             </span>
             <input
-
                 id={id}
                 type={'text'}
                 onChange={onChangeCallback}

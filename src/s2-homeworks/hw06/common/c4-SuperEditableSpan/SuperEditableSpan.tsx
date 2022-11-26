@@ -80,7 +80,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                     />
                     <span
                         onDoubleClick={onDoubleClickCallBack}
-                        className={spanClassName}
+                        className={s.span}
                         {...restSpanProps}
                     >
                         {/*если нет захардкодженного текста для спана, то значение инпута*/}
