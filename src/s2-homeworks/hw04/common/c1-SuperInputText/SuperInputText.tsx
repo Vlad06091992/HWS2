@@ -46,7 +46,6 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         onEnter && // если есть пропс onEnter
         e.key === 'Enter' && // и если нажата кнопка Enter
         onEnter() // то вызвать его
-        console.log("Enter")
     }
 
     const finalSpanClassName = s.error

@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 .sidebar {
-    position: relative;
+    position: fixed;
     left: -317px;
-    transition: 0.8s;
+    transition: 0.4s;
+    width: 317px;
+    height: 100vh;
+    border: 0.5px solid #0059B2;
+    background: white;
+
+
 
 }
-
 .sidebar.open {
     left: 0;
-    position: relative;
+    position: fixed;
     height: 100vh;
     width: 317px;
     background: white;
     border: 0.5px solid #0059B2;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 .active {
