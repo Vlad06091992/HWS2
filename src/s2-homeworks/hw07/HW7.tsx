@@ -11,7 +11,10 @@ import s from './HW7.module.css'
 * 4 - сделать стили в соответствии с дизайном
 * */
 
-const arr = [
+export type ArrType = Array<{id:number,value: 'x' | 'y'|'z'}>
+
+
+const arr:ArrType = [
     { id: 1, value: 'x' },
     { id: 2, value: 'y' },
     { id: 3, value: 'z' },
@@ -29,6 +32,7 @@ const HW7 = () => {
                 <div className={s.container}>
                     <div>
                         <SuperSelect
+                            arr={arr}
                             id={'hw7-super-select'}
                             options={arr}
                             value={value}
@@ -37,6 +41,7 @@ const HW7 = () => {
                     </div>
                     <div>
                         <SuperRadio
+                            arr={arr}
                             id={'hw7-super-radio'}
                             name={'hw7-radio'}
                             options={arr}

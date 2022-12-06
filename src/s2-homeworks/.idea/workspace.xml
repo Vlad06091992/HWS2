@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="628adf2f-d87f-401e-8f89-d36ad5dac0ef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/hw05/pages/Junior.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hw05/pages/Junior.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw07/HW7.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hw07/HW7.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw07/common/c5-SuperSelect/SuperSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hw07/common/c5-SuperSelect/SuperSelect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw07/common/c6-SuperRadio/SuperRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/hw07/common/c6-SuperRadio/SuperRadio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw10/HW10.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw10/Loader.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw10/Loader.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw10/bll/loadingReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw10/bll/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw11/HW11.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw11/HW11.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw11/common/c7-SuperRange/SuperRange.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw12/HW12.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw12/HW12.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw12/bll/themeReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw13/HW13.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw13/HW13.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw13/images/200.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw13/images/400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw13/images/500.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw13/images/error.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2IX3R9iVUiEHKpWXMgvBNMPGVIb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="628adf2f-d87f-401e-8f89-d36ad5dac0ef" name="Changes" comment="" />
+      <created>1670314091513</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670314091513</updated>
+      <workItem from="1670314093297" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
