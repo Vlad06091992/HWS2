@@ -40,7 +40,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
         console.log(e.currentTarget.value)
         let currentObj = arr.find(el => el.value === e.currentTarget.value)
         onChangeOption?.(currentObj?.id)
-
+console.log(value)
         console.log(currentObj)
 
     }

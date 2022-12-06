@@ -21,10 +21,13 @@ const arr:ArrType = [
 ] // value может быть изменено
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
+    const [value, onChangeOption] = useState<number>(2) // селект и радио должны работать синхронно
 
     return (
         <div id={'hw7'}>
+
+
+
             <div className={s2.hwTitle}>Homework #7</div>
 
             {/*демонстрация возможностей компонент:*/}
@@ -35,7 +38,7 @@ const HW7 = () => {
                             arr={arr}
                             id={'hw7-super-select'}
                             options={arr}
-                            value={value}
+                            value={arr.find(el=>el.id === value)?.value}
                             onChangeOption={onChangeOption}
                         />
                     </div>

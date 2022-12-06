@@ -32,10 +32,12 @@ arr,
     const mappedOptions: any[] = options
         ? options.map((o) => (
               <option
+
                   id={'hw7-option-' + o.id}
                   className={s.option}
                   key={o.id}
-                  value={[o.value]}
+                  value={o.value}
+
               >
                   {o.value}
               </option>
@@ -48,6 +50,7 @@ console.log(e.currentTarget.value)
         let currentObj = arr.find(el => el.value === e.currentTarget.value)
 
         console.log(currentObj)
+        // console.log(value)
 
         onChangeOption?.(currentObj?.id)
 
@@ -61,6 +64,7 @@ console.log(e.currentTarget.value)
         <select
             className={finalSelectClassName}
             onChange={onChangeCallback}
+
             {...restProps}
         >
             {mappedOptions}
