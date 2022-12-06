@@ -11,7 +11,7 @@ import s from './HW7.module.css'
 * 4 - сделать стили в соответствии с дизайном
 * */
 
-export type ArrType = Array<{id:number,value: 'x' | 'y'|'z'}>
+export type ArrType = Array<{id:number,value: string}>
 
 
 const arr:ArrType = [

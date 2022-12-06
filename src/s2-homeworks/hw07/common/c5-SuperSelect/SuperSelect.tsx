@@ -12,13 +12,13 @@ type DefaultSelectPropsType = DetailedHTMLProps<
 >
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
-    arr:any
+    arr:ArrType
     options?: any[]
     onChangeOption?: (option: any) => void
 }
 
 const SuperSelect: React.FC<SuperSelectPropsType> = ({
-
+arr,
     options,
     className,
     onChange,
@@ -35,7 +35,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                   id={'hw7-option-' + o.id}
                   className={s.option}
                   key={o.id}
-                  value={o.id}
+                  value={[o.value]}
               >
                   {o.value}
               </option>
@@ -43,7 +43,15 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
         : [] // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        onChangeOption?.(e.currentTarget.value)
+        // onChangeOption?.(e.target.value)
+console.log(e.currentTarget.value)
+        let currentObj = arr.find(el => el.value === e.currentTarget.value)
+
+        console.log(currentObj)
+
+        onChangeOption?.(currentObj?.id)
+
+
         // делают студенты
     }
 
