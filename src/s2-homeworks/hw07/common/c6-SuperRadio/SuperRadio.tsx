@@ -51,7 +51,7 @@ console.log(value)
     const mappedOptions: any[] = options
 
         ? options.map((o) => (
-            <label key={name + '-' + o.id} className={s.label}>
+            <label key={name + '-' + o.value} className={s.label}>
                 <input
                     id={id + '-input-' + o.id}
                     className={finalRadioClassName}
