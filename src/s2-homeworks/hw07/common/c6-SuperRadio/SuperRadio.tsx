@@ -47,13 +47,14 @@ console.log(value)
 
     const finalRadioClassName = s.radio + (className ? ' ' + className : '')
     const spanClassName = s.span + (spanProps?.className ? ' ' + spanProps.className : '')
-
+console.log(id)
     const mappedOptions: any[] = options
 
         ? options.map((o) => (
-            <label key={name + '-' + o.value} className={s.label}>
+
+            <label key={name + '-' + o.id} className={s.label}>
                 <input
-                    id={id + '-input-' + o.id}
+                    id={id + '-input-' + o.value}
                     className={finalRadioClassName}
                     type={'radio'}
                     // name, checked, value делают студенты
