@@ -58,7 +58,7 @@ console.log(id)
                     className={finalRadioClassName}
                     type={'radio'}
                     // name, checked, value делают студенты
-                    name={o.name}
+                    name={name}
                     value={o.value}
                     checked={o.id == value}
 
@@ -67,7 +67,7 @@ console.log(id)
                     {...restProps}
                 />
                 <span
-                    id={id + '-span-' + o.id}
+                    id={id + '-span-' + o.value}
                     {...spanProps}
                     className={spanClassName}
                 >
