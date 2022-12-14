@@ -31,7 +31,11 @@ const HW8 = () => {
     const [people, setPeople] = useState<UserType[]>(initialPeople)
     const [currentSort, setCurrentSort] = useState('')
 
-    const finalPeople = people.map((u: UserType) => <User key={u._id} u={u}/>)
+    console.log(people)
+
+    const finalPeople = people.map((u: UserType)  => {
+        return  <User key={u._id}  u={u}/>
+    })
 
     const sortUp = () => {
         setPeople(
