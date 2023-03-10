@@ -2,6 +2,8 @@
 }
 
 .responseContainer {
+    display: flex;
+    align-items: center;
 }
 
 .imageContainer {
