@@ -30,6 +30,8 @@ const HW14 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<string[]>([])
 
+    console.log(techs)
+
     const sendQuery = (value: string) => {
         setLoading(true)
         getTechs(value)
@@ -54,14 +56,12 @@ const HW14 = () => {
 sendQuery(value)
         // добавить/заменить значение в квери урла
         // setSearchParams(
-setSearchParams(value)
+// setSearchParams(value)
         //
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-
-        console.log(params)
 
         sendQuery(params.find || '')
         setFind(params.find || '')

@@ -9,7 +9,6 @@ const reducers = combineReducers({
 
 const store = legacy_createStore(reducers)
 
-console.log(store.getState())
 
 export default store
 
