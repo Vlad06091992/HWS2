@@ -17,7 +17,7 @@ const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
             'https://samurai.it-incubator.io/api/3.0/homework/test2',
-            {params: {find}}
+            {params: find}
         )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)
@@ -30,7 +30,7 @@ const HW14 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<string[]>([])
 
-console.log(searchParams)
+
 
     const sendQuery = (value: string) => {
         setLoading(true)
@@ -56,7 +56,7 @@ console.log(searchParams)
 // sendQuery(value)
         // добавить/заменить значение в квери урла
         // setSearchParams(
-setSearchParams(value)
+// setSearchParams(value)
         //
     }
 
