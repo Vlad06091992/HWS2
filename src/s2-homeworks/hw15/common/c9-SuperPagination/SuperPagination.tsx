@@ -30,7 +30,6 @@ console.log(lastPage)
     }
 
     const onChangeSelect = (e:ChangeEvent<HTMLSelectElement>) => {
-        debugger
         setCount(+e.currentTarget.value)
         // пишет студент
     }

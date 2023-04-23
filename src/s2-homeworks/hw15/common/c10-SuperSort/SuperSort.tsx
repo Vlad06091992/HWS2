@@ -44,7 +44,6 @@ const SuperSort: React.FC<SuperSortPropsType> = (
     const down = '1' + value
 
     const onChangeCallback = () => {
-        debugger
         onChange(pureChange(sort, down, up))
     }
 

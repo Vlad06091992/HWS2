@@ -48,7 +48,6 @@ const HW15 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<TechType[]>([])
 
-    console.log(1)
 
     const sendQuery = (params: any) => {
         setLoading(true)
@@ -80,12 +79,11 @@ const HW15 = () => {
 
     const onChangeSort = (newSort: string) => {
         // делает студент
-
         setSort(newSort)
         setPage(1) // при сортировке сбрасывать на 1 страницу
 
         // sendQuery(
-        sendQuery({page,count,sort})
+        sendQuery({page,count,newSort})
 
         // setSearchParams(
 
