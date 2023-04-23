@@ -55,7 +55,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     const finalSelectClassName = s.select + (className ? ' ' + className : '')
 
     return (
-        <select
+        <select style={{margin: '0px 10px'}}
             className={finalSelectClassName}
             onChange={onChangeCallback}
             {...restProps}

@@ -41,7 +41,10 @@ console.log(lastPage)
                 id={id + '-pagination'}
                 sx={{
                     // стили для Pagination // пишет студент
+                    color:"primary"
                 }}
+                color={"primary"}
+                shape={"rounded"}
                 page={page}
                 count={lastPage}
                 onChange={onChangeCallback}
