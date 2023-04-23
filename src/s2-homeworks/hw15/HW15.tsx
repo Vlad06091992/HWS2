@@ -97,6 +97,7 @@ const HW15 = () => {
         const params:{page:number,count:number,sort:string} = {page,count,sort}
         setPage(+params.page || 1)
         setCount(+params.count || 4)
+        setSort(params.sort || '')
         sendQuery({page: params.page, count: params.count,sort:params.sort})
     },[page,count] )
 
