@@ -4,6 +4,9 @@ import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
 
 export type SuperPaginationPropsType = {
+    count:number
+    setPage:(n:number)=>void
+    setCount:(n:number)=>void
     id?: string
     page: number
     itemsCountForPage: number
@@ -13,20 +16,22 @@ export type SuperPaginationPropsType = {
 
 const SuperPagination: React.FC<SuperPaginationPropsType> = (
     {
-        page, itemsCountForPage, totalCount, onChange, id = 'hw15',
+        count,page, itemsCountForPage, totalCount, onChange, id = 'hw15',setPage,setCount
     }
 
 ) => {
 
-
     const lastPage = Math.ceil(totalCount/itemsCountForPage) // пишет студент // вычислить количество страниц
 console.log(lastPage)
-    const onChangeCallback = (event: ChangeEvent<unknown>, page: number) => {
+    const onChangeCallback = (event: ChangeEvent<unknown>, currentPage: number) => {
         // пишет студент
+        setPage(currentPage)
+        onChange(currentPage,count)
     }
 
-    const onChangeSelect = (event: any) => {
+    const onChangeSelect = (e:ChangeEvent<HTMLSelectElement>) => {
         debugger
+        setCount(+e.currentTarget.value)
         // пишет студент
     }
 
@@ -49,6 +54,7 @@ console.log(lastPage)
             </span>
 
             <SuperSelect
+                setCount={setCount}
                 id={id + '-pagination-select'}
                 value={itemsCountForPage}
                 options={[

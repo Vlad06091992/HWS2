@@ -17,7 +17,7 @@ const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
             'https://samurai.it-incubator.io/api/3.0/homework/test2',
-            {params: find}
+            {params: {find}}
         )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)
@@ -51,18 +51,20 @@ const HW14 = () => {
     }
 
     const onChangeText = (value: string) => {
+
+
         setFind(value)
         // делает студент
 // sendQuery(value)
         // добавить/заменить значение в квери урла
         // setSearchParams(
-// setSearchParams(value)
+setSearchParams({find})
         //
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-
+console.log(params.find)
         sendQuery(params.find || '')
         setFind(params.find || '')
     }, [])

@@ -47,21 +47,17 @@ const HW15 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<TechType[]>([])
 
-    let age = searchParams.get('age')
-    let name = searchParams.get('name')
-    console.log(age,name)
-    debugger
+    console.log(1)
 
     const sendQuery = (params: any) => {
-
-
-
         setLoading(true)
         getTechs(params)
             .then((res) => {
                 // делает студент
                 if(res){
+                    // debugger
                     setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
                 }
                 // сохранить пришедшие данные
                 setLoading(false)
@@ -70,12 +66,13 @@ const HW15 = () => {
     }
 
     const onChangePagination = (newPage: number, newCount: number) => {
-        // делает студент
 
+        // делает студент
         setPage(newPage)
-        setCount(count)
+        setCount(newCount)
 
         // sendQuery(
+        sendQuery({page:newPage,count:newCount})
 
         //
     }
@@ -94,14 +91,13 @@ const HW15 = () => {
 
     useEffect(() => {
 
-
-        const params = Object.fromEntries(searchParams)
-
-
-        sendQuery({page: params.page, count: params.count})
+        const params:{page:number,count:number} = {page,count}
         setPage(+params.page || 1)
         setCount(+params.count || 4)
-    }, [])
+        sendQuery({page: params.page, count: params.count})
+    },[page,count] )
+
+
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
@@ -123,6 +119,9 @@ const HW15 = () => {
                 {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
 
                 <SuperPagination
+                    count={count}
+                    setCount={setCount}
+                    setPage={setPage}
                     page={page}
                     itemsCountForPage={count}
                     totalCount={totalCount}

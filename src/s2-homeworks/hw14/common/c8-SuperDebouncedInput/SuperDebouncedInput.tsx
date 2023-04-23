@@ -28,6 +28,8 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
 ) => {
     let [timerId, setTimerId] = useState<NodeJS.Timeout | undefined>(undefined)
 
+    console.log(restProps.value)
+debugger
     const onChangeTextCallback = (value: string) => {
         onChangeText?.(value)
 
